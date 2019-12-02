@@ -49,7 +49,7 @@ ranks.ref <- get_ranks(x[x$reference == 1,]) # ranks for the reference vessels
 ranks.all <- get_ranks(x[x$reference == 0,]) # ranks for the non-reference vessels
 
 # > str(head(ranks.ref, n = 3))
-#List of 5
+#List of 3
 # $ REDACTED.ref1:List of 3
 # ..$ vessel: chr "REDACTED.ref1"
 # ..$ size  : num 12.2
