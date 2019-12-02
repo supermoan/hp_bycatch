@@ -67,7 +67,7 @@ ranks.all <- get_ranks(x[x$reference == 0,]) # ranks for the non-reference vesse
 
 # > str(head(ranks.all, n = 3))
 #List of 3
-# $ DEDACTED1       :List of 3
+# $ DEDACTED1:List of 3
 # ..$ vessel: chr "DEDACTED1"
 # ..$ size  : num 6.8
 # ..$ effort: Named num [1:3] 5 5 1
@@ -77,7 +77,7 @@ ranks.all <- get_ranks(x[x$reference == 0,]) # ranks for the non-reference vesse
 # ..$ size  : num 10.6
 # ..$ effort: Named num [1:4] 191 186 27 17
 # .. ..- attr(*, "names")= chr [1:4] "cod3" "angler3" "other3" "cod2"
-# $ DEDACTED3 :List of 3
+# $ DEDACTED3:List of 3
 # ..$ vessel: chr "DEDACTED1"
 # ..$ size  : num 10.6
 # ..$ effort: Named num [1:3] 227 61 7
