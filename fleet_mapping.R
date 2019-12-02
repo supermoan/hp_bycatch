@@ -29,7 +29,7 @@
 # $ vessel    : chr  "REDACTED1" "REDACTED1" "REDACTED1" "REDACTED2" ...
 # $ effort    : num  5 1 5 27 186 17 191 1 1 16 ...
 
-# get_ranks(): takes a data frame containing the columns VESSEL, VESSELSIZE and EFFORT. Additionally,
+# get_ranks(): takes a data frame containing the columns vessel, vesselsize and effort. Additionally,
 # each variable specified in vars must also be a column in data. The data frame is first split by
 # vessel, and then each subset is ordered decrementally by effort. Labels for each effort datum
 # is generated from combinations of the stratifying variables specified. Returns a list of lists,
