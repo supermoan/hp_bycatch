@@ -8,6 +8,7 @@
 #              The purpose of this R script is to document the process by which
 #              we included random effects in predictions for GAMs.
 #
+#              Note that vessel names have been redacted for privacy purposes.
 
 # We start out with a data frame, x, that contains fishing effort data for all vessels,
 # (both ordinary and reference vessels) aggregated by region and fishery. The contents of
@@ -25,7 +26,7 @@
 # $ hauls     : num  5 1 5 27 186 17 191 1 1 16 ...
 # $ catch     : num  570.6 39.6 1886.2 9316.9 28027.7 ...
 # $ vesselsize: num  6.8 6.8 6.8 10.6 10.6 ...
-# $ vessel    : chr  "DEDACTED1" "DEDACTED1" "DEDACTED1" "DEDACTED2" ...
+# $ vessel    : chr  "REDACTED1" "REDACTED1" "REDACTED1" "REDACTED2" ...
 # $ effort    : num  5 1 5 27 186 17 191 1 1 16 ...
 
 # get_ranks(): takes a data frame containing the columns VESSEL, VESSELSIZE and EFFORT. Additionally,
@@ -49,36 +50,36 @@ ranks.all <- get_ranks(x[x$reference == 0,]) # ranks for the non-reference vesse
 
 # > str(head(ranks.ref, n = 3))
 #List of 5
-# $ DEDACTED.ref1:List of 3
-# ..$ vessel: chr "DEDACTED.ref1"
+# $ REDACTED.ref1:List of 3
+# ..$ vessel: chr "REDACTED.ref1"
 # ..$ size  : num 12.2
 # ..$ effort: Named num [1:3] 204 44 10
 # .. ..- attr(*, "names")= chr [1:3] "angler4" "other4" "cod4"
-# $ DEDACTED.ref2:List of 3
-# ..$ vessel: chr "DEDACTED.ref1"
+# $ REDACTED.ref2:List of 3
+# ..$ vessel: chr "REDACTED.ref1"
 # ..$ size  : num 14.7
 # ..$ effort: Named num [1:3] 215 132 32
 # .. ..- attr(*, "names")= chr [1:3] "cod1" "angler1" "other1"
-# $ DEDACTED.ref3:List of 3
-# ..$ vessel: chr "DEDACTED.ref3"
+# $ REDACTED.ref3:List of 3
+# ..$ vessel: chr "REDACTED.ref3"
 # ..$ size  : num 12.8
 # ..$ effort: Named num [1:4] 72 69 17 2
 # .. ..- attr(*, "names")= chr [1:4] "other3" "cod2" "other4" "cod4"
 
 # > str(head(ranks.all, n = 3))
 #List of 3
-# $ DEDACTED1:List of 3
-# ..$ vessel: chr "DEDACTED1"
+# $ REDACTED1:List of 3
+# ..$ vessel: chr "REDACTED1"
 # ..$ size  : num 6.8
 # ..$ effort: Named num [1:3] 5 5 1
 # .. ..- attr(*, "names")= chr [1:3] "other3" "cod3" "angler3"
-# $ DEDACTED2:List of 3
-# ..$ vessel: chr "DEDACTED1"
+# $ REDACTED2:List of 3
+# ..$ vessel: chr "REDACTED2"
 # ..$ size  : num 10.6
 # ..$ effort: Named num [1:4] 191 186 27 17
 # .. ..- attr(*, "names")= chr [1:4] "cod3" "angler3" "other3" "cod2"
-# $ DEDACTED3:List of 3
-# ..$ vessel: chr "DEDACTED1"
+# $ REDACTED3:List of 3
+# ..$ vessel: chr "REDACTED3"
 # ..$ size  : num 10.6
 # ..$ effort: Named num [1:3] 227 61 7
 # .. ..- attr(*, "names")= chr [1:3] "cod1" "other1" "angler1"
