@@ -5,7 +5,7 @@
 #              vessels. The purpose is to make bycatch predictions using generalized
 #              additive models (GAMs) that include random effect terms possible. 
 #
-#              The purpose of this R script is to document the process by which
+#              This R script is meant to document the process by which
 #              we included random effects in predictions for GAMs.
 #
 #              Note that vessel names have been redacted for privacy purposes.
@@ -104,8 +104,8 @@ m <- sapply(ranks.all, function(x) {
 })
 
 # > str(m)
-# Named chr [1:8188] "DEDACTED.ref5" "DEDACTED.ref5" "DEDACTED.ref10" "Vågøybuen" "DEDACTED.ref4" "DEDACTED.ref4" "DEDACTED.ref3" "DEDACTED.ref11" ...
-# - attr(*, "names")= chr [1:8188] "DEDACTED1" "DEDACTED2" "DEDACTED3" "DEDACTED4" ...
+# Named chr [1:8188] "REDACTED.ref5" "REDACTED.ref5" "REDACTED.ref10" "REDACTED.ref11" "REDACTED.ref44" "REDACTED.ref4" "REDACTED.ref3" "REDACTED.ref11" ...
+# - attr(*, "names")= chr [1:8188] "REDACTED1" "REDACTED2" "REDACTED3" "REDACTED4" ...
 
 # overwrite original non-reference vessel names in newdata with most closely matching reference vessels
 newdata$fvessel <- factor(m[match(newdata$vessel, names(m))])
